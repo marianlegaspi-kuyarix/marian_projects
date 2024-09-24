@@ -1,0 +1,15 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+pygame.mixer.init()
+pygame.mixer.music.load("calm-loop-80576.mp3")
+pygame.mixer.music.play()
+sleep(4)
+pygame.mixer.init()
+pygame.mixer.music.load("scary-game-effect-131801.mp3")
+pygame.mixer.music.play()
+sleep(1)
+image = pygame.image.load("scary-face-pictures-fvx05bim45ctjiwh.jpg")
+window.blit(image, (0,0))
+pygame.display.update()
